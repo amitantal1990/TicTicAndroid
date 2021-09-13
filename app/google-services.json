@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "464242589024",
+    "firebase_url": "https://experis-app.firebaseio.com",
+    "project_id": "experis-app",
+    "storage_bucket": "experis-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464242589024:android:315da1819e9cace611f205",
+        "android_client_info": {
+          "package_name": "com.fairfaqs.experi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464242589024-d5rr0ac4kfikf35bb797jte3qk1hv4sv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTqRx1Bc6xmOV79p7NJSuBk0U0f6xs8tY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464242589024-26jdbragrpc98dbbeu3338nc4ail6pp4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "464242589024-r2fem2886smrq8v7t2bopbn6vuljt5o7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.faifaqs.experisapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

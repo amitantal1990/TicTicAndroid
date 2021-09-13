@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.fairfaqs.experi.ActivitesFragment.notificationTab.Notification_F">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@color/black"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Inbox"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title"
+                    android:textStyle="bold" />
+
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/inbox_btn"-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:background="@color/transparent"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:src="@drawable/ic_send_black" />-->
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/viewRelative"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginBottom="3dp"
+            android:background="@color/graycolor"
+            />
+
+        <RelativeLayout
+            android:id="@+id/tabs_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/viewRelative"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:tabMode="fixed"
+                app:tabTextColor="@color/dark_gray"
+                app:tabSelectedTextColor="@color/yellow"
+                app:tabTextAppearance="@style/tab_text"
+                app:tabGravity="fill"
+                app:tabPaddingStart="10dp"
+                app:tabPaddingEnd="10dp"
+                app:tabIndicatorHeight="3dp"
+                android:layout_marginStart="-1dp"
+                app:tabIndicatorColor="@color/yellow"/>
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viewpager"
+                android:layout_below="@+id/tabs">
+            </androidx.viewpager.widget.ViewPager>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
